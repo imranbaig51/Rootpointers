@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Be-Vietnam;
+}
+
+@font-face {
+  font-family: Be-Vietnam;
+  src: url(/Static/Fonts/BeVietnam-Regular.ttf);
+}
+#chk-btn:checked + .navbar-menu {
+  height: 160px;
+}/*# sourceMappingURL=style.css.map */
