@@ -15,9 +15,6 @@ module.exports = {
         xxl: ['24px'],
         header: ['36px'],
       },
-      // position:{
-      //   "none": "unset"
-      // },
     },
     screens: {
       'sm': '576px',
