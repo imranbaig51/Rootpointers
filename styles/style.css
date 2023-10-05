@@ -1,13 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;800;900&family=Inter:wght@400;500;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
-  font-family: Be-Vietnam;
+  box-sizing: border-box;
 }
 
 @font-face {
   font-family: Be-Vietnam;
-  src: url(/Static/Fonts/BeVietnam-Regular.ttf);
+  src: url(../Static/Fonts/BeVietnam-Regular.ttf);
 }
 #chk-btn:checked + .navbar-menu {
   height: 160px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Be-Vietnam;
+  font-size: 16px;
+}
+
+.interFont {
+  font-family: "Inter", sans-serif;
+}
+
+.beVietnamFont {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+@media (min-width: 992px) {
+  .gradientCircle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  .gradientCircle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(244deg, rgba(74, 131, 231, 0.44) 14.33%, rgba(66, 232, 224, 0.44) 79.52%);
+  }
+}
+@media (min-width: 1200px) {
+  .team-seaction .xl-max-w-992px {
+    max-width: 992px !important;
+  }
+}
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1400px !important;
+  }
+}
+@media (min-width: 1800px) {
+  .container {
+    max-width: 1400px !important;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,317 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rootpointers</title>
-    <link rel="stylesheet" href="/styles/output.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="shortcut icon" href="/static/images/logo.png" type="image/x-icon">
-  </head>
-  <body>
-    <header>
-      <section class="navba relative z-10">
-        <nav class="fixed left-0 right-0 bg-white">
-          <div
-            class="container flex items-center py-4 mx-auto justify-between lg:justify-normal px-3 lg:px-0 "
-          >
-            <div class="header-logo mr-16">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="59"
-                height="66"
-                viewBox="0 0 59 66"
-                fill="none"
-              >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rootpointers</title>
+  <link rel="stylesheet" href="./styles/output.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="shortcut icon" href="./static/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <section class="navba relative z-10">
+      <nav class="fixed left-0 right-0 bg-white">
+        <div class="container flex items-center py-4 mx-auto justify-between lg:justify-normal px-3 lg:px-0 ">
+          <div class="header-logo mr-16">
+            <svg xmlns="http://www.w3.org/2000/svg" width="59" height="66" viewBox="0 0 59 66" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M15.5264 29.5007V14.4641C15.5264 14.4641 24.4643 14.6318 29.3801 14.4641C34.2957 14.2964 43.178 16.1969 45.2447 23.6873C47.3113 31.1774 42.2279 39.6739 30.7764 39.618H23.6821V48.5431L15.5264 48.6454V33.1339C15.5264 33.1339 27.3693 33.1339 29.6593 33.1339C31.9498 33.1339 37.7033 32.4908 37.4244 27.2088C37.1448 21.9264 33.4021 21.0878 30.7764 21.1159C28.1512 21.1439 23.7657 21.1159 23.7657 21.1159V29.4724L15.5264 29.5007Z"
+                fill="#4A83E7" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M35.4521 42.759C35.4521 42.759 40.8587 42.1645 42.7721 41.1035L48.0224 48.632L39.5457 48.6455L35.4521 42.759Z"
+                fill="#4A83E7" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.442383 47.4983C0.442383 48.8564 1.17603 50.1122 2.3666 50.7915L27.6815 65.2317C28.872 65.9104 30.3391 65.9104 31.53 65.2317L56.8447 50.7915C58.0352 50.1122 58.7686 48.8564 58.7686 47.4983V18.6175C58.7686 17.2592 58.0352 16.0039 56.8447 15.3248L31.53 0.884411C30.3391 0.205196 28.872 0.205196 27.6815 0.884411L2.3666 15.3248C1.17603 16.0039 0.442383 17.2591 0.442383 18.6175V47.4983ZM27.8613 62.2253L4.9116 49.1342C3.83216 48.5184 3.16711 47.3802 3.16711 46.1493V19.9669C3.16711 18.7354 3.83216 17.5974 4.9116 16.9817L27.8613 3.89071C28.9406 3.27499 30.2705 3.27499 31.3498 3.89071L54.2995 16.9817C55.3787 17.5974 56.0439 18.7354 56.0439 19.9669V46.1493C56.0439 47.3802 55.3787 48.5184 54.2995 49.1342L31.3498 62.2253C30.2705 62.8411 28.9406 62.8411 27.8613 62.2253Z"
+                fill="#4A83E7" />
+            </svg>
+          </div>
+          <label class="menu lg:hidden" for="chk-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35px" height="35px" viewBox="0 0 24 24" fill="none"
+              class="hamburger">
+              <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+              <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+              <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </label>
+          <input hidden class="toogle-accordion" type="checkbox" id="chk-btn" />
+          <ul
+            class="navbar-menu bg-white h-0 overflow-hidden lg:h-auto lg: lg:top-0 flex-col lg:flex-row flex items-center font-medium xl:text-lg [&>li]:w-fit [&>li]:cursor-pointer [&>li:hover]:text-blue-600 absolute  left-0 top-[6rem] w-full lg:w-auto lg:static transition-all duration-500 lg:gap-[4rem]">
+            <li class="py-1 lg:py-0">Home</li>
+            <li class="py-1 lg:py-0">Services</li>
+            <li class="py-1 lg:py-0">Portfolio</li>
+            <li class="py-1 lg:py-0"><a href="./our-team.html">Our Team</a> </li>
+            <li class="py-1 lg:py-0">About Us</li>
+          </ul>
+          <ul class="nav-contact lg:flex font-medium ml-auto xl:text-lg hidden lg:gap-4 px-2 [&>li]:cursor-pointer">
+            <li class="text-blue-600">
+              <a href="tel:+74951519090">+7 (495) 151-9090</a>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                <circle cx="14.9658" cy="14" r="13.5" fill="white" stroke="#4A83E7" />
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M15.5264 29.5007V14.4641C15.5264 14.4641 24.4643 14.6318 29.3801 14.4641C34.2957 14.2964 43.178 16.1969 45.2447 23.6873C47.3113 31.1774 42.2279 39.6739 30.7764 39.618H23.6821V48.5431L15.5264 48.6454V33.1339C15.5264 33.1339 27.3693 33.1339 29.6593 33.1339C31.9498 33.1339 37.7033 32.4908 37.4244 27.2088C37.1448 21.9264 33.4021 21.0878 30.7764 21.1159C28.1512 21.1439 23.7657 21.1159 23.7657 21.1159V29.4724L15.5264 29.5007Z"
-                  fill="#4A83E7"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M35.4521 42.759C35.4521 42.759 40.8587 42.1645 42.7721 41.1035L48.0224 48.632L39.5457 48.6455L35.4521 42.759Z"
-                  fill="#4A83E7"
-                />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M0.442383 47.4983C0.442383 48.8564 1.17603 50.1122 2.3666 50.7915L27.6815 65.2317C28.872 65.9104 30.3391 65.9104 31.53 65.2317L56.8447 50.7915C58.0352 50.1122 58.7686 48.8564 58.7686 47.4983V18.6175C58.7686 17.2592 58.0352 16.0039 56.8447 15.3248L31.53 0.884411C30.3391 0.205196 28.872 0.205196 27.6815 0.884411L2.3666 15.3248C1.17603 16.0039 0.442383 17.2591 0.442383 18.6175V47.4983ZM27.8613 62.2253L4.9116 49.1342C3.83216 48.5184 3.16711 47.3802 3.16711 46.1493V19.9669C3.16711 18.7354 3.83216 17.5974 4.9116 16.9817L27.8613 3.89071C28.9406 3.27499 30.2705 3.27499 31.3498 3.89071L54.2995 16.9817C55.3787 17.5974 56.0439 18.7354 56.0439 19.9669V46.1493C56.0439 47.3802 55.3787 48.5184 54.2995 49.1342L31.3498 62.2253C30.2705 62.8411 28.9406 62.8411 27.8613 62.2253Z"
-                  fill="#4A83E7"
-                />
+                  d="M16.3986 11.2936C16.9598 11.4028 17.4754 11.6767 17.8797 12.0802C18.284 12.4837 18.5584 12.9984 18.6679 13.5585L16.3986 11.2936ZM16.3986 9C17.5644 9.12926 18.6515 9.65033 19.4815 10.4776C20.3114 11.3049 20.8348 12.3893 20.9658 13.5527L16.3986 9ZM20.3913 18.1284V19.8486C20.392 20.0083 20.3592 20.1663 20.2951 20.3126C20.231 20.459 20.137 20.5903 20.0191 20.6982C19.9012 20.8062 19.762 20.8884 19.6105 20.9396C19.4589 20.9907 19.2983 21.0097 19.1389 20.9953C17.3711 20.8036 15.673 20.2007 14.1811 19.235C12.793 18.3547 11.6162 17.1801 10.7342 15.7947C9.76327 14.2988 9.15906 12.5957 8.97048 10.8234C8.95613 10.6648 8.97501 10.505 9.02592 10.3541C9.07684 10.2033 9.15867 10.0646 9.26621 9.94703C9.37375 9.82944 9.50465 9.73549 9.65056 9.67117C9.79647 9.60684 9.9542 9.57354 10.1137 9.57339H11.8372C12.116 9.57065 12.3863 9.66919 12.5977 9.85064C12.8091 10.0321 12.9471 10.2841 12.9862 10.5596C13.0589 11.1101 13.1938 11.6506 13.3883 12.1709C13.4656 12.3761 13.4823 12.5991 13.4365 12.8136C13.3907 13.028 13.2842 13.2248 13.1298 13.3807L12.4002 14.1089C13.218 15.5444 14.4089 16.733 15.8471 17.5493L16.5767 16.8211C16.7329 16.6669 16.9301 16.5606 17.145 16.5149C17.3598 16.4692 17.5833 16.4859 17.7889 16.563C18.3101 16.7572 18.8517 16.8918 19.4032 16.9644C19.6823 17.0037 19.9371 17.144 20.1193 17.3586C20.3015 17.5732 20.3983 17.8472 20.3913 18.1284Z"
+                  stroke="#4A83E7" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                <circle cx="14.8965" cy="14" r="13.5" fill="white" stroke="#4A83E7" />
+                <path
+                  d="M20.8965 17C20.8965 17.3536 20.756 17.6928 20.506 17.9428C20.2559 18.1929 19.9168 18.3333 19.5632 18.3333H11.5632L8.89648 21V10.3333C8.89648 9.97971 9.03696 9.64057 9.28701 9.39052C9.53706 9.14048 9.8762 9 10.2298 9H19.5632C19.9168 9 20.2559 9.14048 20.506 9.39052C20.756 9.64057 20.8965 9.97971 20.8965 10.3333V17Z"
+                  stroke="#4A83E7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section class="hero pt-28 ">
+      <div class="traingles top-[22rem] sm:top-[18rem] lg:top-[30rem] xl:top-[35rem] absolute"><img
+          src="Static/Images/left-triangles.png" alt=""></div>
+      <div class="container py-4 lg:pt-36 px-3 lg:px-0 mx-auto flex">
+        <div class="portion-1 relative  lg:w-2/4 mx-auto lg:m-0">
+          <!-- lg:max-w-[530px] -->
+          <div class="first-text">
+            <div class="heading ">
+              <h1
+                class="text-xl lg:text-2xl xl:text-[38px] 2xl:text-[48px] xl:leading-[3.5rem] font-extrabold text-[#4A83E7]">
+                Unlock the Power of
+                Innovation with Our Expertise</h1>
             </div>
-            <label class="menu lg:hidden" for="chk-btn">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="35px"
-                height="35px"
-                viewBox="0 0 24 24"
-                fill="none"
-                class="hamburger"
-              >
-                <path
-                  d="M4 18L20 18"
-                  stroke="#000000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M4 12L20 12"
-                  stroke="#000000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M4 6L20 6"
-                  stroke="#000000"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </label>
-            <input
-              hidden
-              class="toogle-accordion"
-              type="checkbox"
-              id="chk-btn"
-            />
-            <ul
-              class="navbar-menu bg-white h-0 overflow-hidden lg:h-auto lg: lg:top-0 flex-col lg:flex-row flex items-center font-medium xl:text-lg [&>li]:w-fit [&>li]:cursor-pointer [&>li:hover]:text-blue-600 absolute  left-0 top-[6rem] w-full lg:w-auto lg:static transition-all duration-500 lg:gap-[4rem]"
-            >
-              <li class="py-1 lg:py-0">Home</li>
-              <li class="py-1 lg:py-0">Services</li>
-              <li class="py-1 lg:py-0">Portfolio</li>
-              <li class="py-1 lg:py-0">Our Team</li>
-              <li class="py-1 lg:py-0">About Us</li>
-            </ul>
-            <ul
-              class="nav-contact lg:flex font-medium ml-auto xl:text-lg hidden lg:gap-4 px-2 [&>li]:cursor-pointer"
-            >
-              <li class="text-blue-600">
-                <a href="tel:+74951519090">+7 (495) 151-9090</a>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="29"
-                  height="28"
-                  viewBox="0 0 29 28"
-                  fill="none"
-                >
-                  <circle
-                    cx="14.9658"
-                    cy="14"
-                    r="13.5"
-                    fill="white"
-                    stroke="#4A83E7"
-                  />
-                  <path
-                    d="M16.3986 11.2936C16.9598 11.4028 17.4754 11.6767 17.8797 12.0802C18.284 12.4837 18.5584 12.9984 18.6679 13.5585L16.3986 11.2936ZM16.3986 9C17.5644 9.12926 18.6515 9.65033 19.4815 10.4776C20.3114 11.3049 20.8348 12.3893 20.9658 13.5527L16.3986 9ZM20.3913 18.1284V19.8486C20.392 20.0083 20.3592 20.1663 20.2951 20.3126C20.231 20.459 20.137 20.5903 20.0191 20.6982C19.9012 20.8062 19.762 20.8884 19.6105 20.9396C19.4589 20.9907 19.2983 21.0097 19.1389 20.9953C17.3711 20.8036 15.673 20.2007 14.1811 19.235C12.793 18.3547 11.6162 17.1801 10.7342 15.7947C9.76327 14.2988 9.15906 12.5957 8.97048 10.8234C8.95613 10.6648 8.97501 10.505 9.02592 10.3541C9.07684 10.2033 9.15867 10.0646 9.26621 9.94703C9.37375 9.82944 9.50465 9.73549 9.65056 9.67117C9.79647 9.60684 9.9542 9.57354 10.1137 9.57339H11.8372C12.116 9.57065 12.3863 9.66919 12.5977 9.85064C12.8091 10.0321 12.9471 10.2841 12.9862 10.5596C13.0589 11.1101 13.1938 11.6506 13.3883 12.1709C13.4656 12.3761 13.4823 12.5991 13.4365 12.8136C13.3907 13.028 13.2842 13.2248 13.1298 13.3807L12.4002 14.1089C13.218 15.5444 14.4089 16.733 15.8471 17.5493L16.5767 16.8211C16.7329 16.6669 16.9301 16.5606 17.145 16.5149C17.3598 16.4692 17.5833 16.4859 17.7889 16.563C18.3101 16.7572 18.8517 16.8918 19.4032 16.9644C19.6823 17.0037 19.9371 17.144 20.1193 17.3586C20.3015 17.5732 20.3983 17.8472 20.3913 18.1284Z"
-                    stroke="#4A83E7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="29"
-                  height="28"
-                  viewBox="0 0 29 28"
-                  fill="none"
-                >
-                  <circle
-                    cx="14.8965"
-                    cy="14"
-                    r="13.5"
-                    fill="white"
-                    stroke="#4A83E7"
-                  />
-                  <path
-                    d="M20.8965 17C20.8965 17.3536 20.756 17.6928 20.506 17.9428C20.2559 18.1929 19.9168 18.3333 19.5632 18.3333H11.5632L8.89648 21V10.3333C8.89648 9.97971 9.03696 9.64057 9.28701 9.39052C9.53706 9.14048 9.8762 9 10.2298 9H19.5632C19.9168 9 20.2559 9.14048 20.506 9.39052C20.756 9.64057 20.8965 9.97971 20.8965 10.3333V17Z"
-                    stroke="#4A83E7"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </li>
-            </ul>
+            <div class="heding-para text-[#252525] mt-4">
+              <h2 class="text-lg lg:text-xl xl:text-2xl font-semibold py-1">ONE-STOP IT SOLUTION</h2>
+              <p class="text-sm xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt</p>
+            </div>
           </div>
-        </nav>
-      </section>
-    </header>
-    <main>
-      <section class="hero pt-28">
-        <div class="traingles top-[22rem] sm:top-[18rem] lg:top-[30rem] xl:top-[35rem] absolute"><img src="Static/Images/left-triangles.png" alt=""></div>
-    <div class="container py-4 lg:pt-36 px-3 lg:px-0 mx-auto flex">
-      <div class="portion-1 relative  lg:w-2/4 mx-auto lg:m-0">
-        <!-- lg:max-w-[530px] -->
-        <div class="first-text">
-        <div class="heading ">
-          <h1 class="text-xl lg:text-2xl xl:text-[38px] 2xl:text-[48px] xl:leading-[3.5rem] font-extrabold text-[#4A83E7]">Unlock the Power of
-            Innovation with Our Expertise</h1>
+          <button
+            class="px-6  rounded-3xl hover:bg-blue-700 hover:cursor-pointer bg-[#4A83E7] text-white mt-7 text-sm leading-10">Learn
+            More</button>
+          <div class="imgs relative">
+
+            <div class="rounded-arrow absolute left-3 -top-7 lg:left-[8.5rem] -z-10"><img
+                src="Static/Images/big=rotate-arrow.png" alt=""> </div>
           </div>
-          <div class="heding-para text-[#252525] mt-4">
-            <h2 class="text-lg lg:text-xl xl:text-2xl font-semibold py-1">ONE-STOP IT SOLUTION</h2>
-          <p class="text-sm xl:text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt</p>
+          <div class="heding-para text-[#252525] mt-[15rem] lg:mb-5">
+            <h2 class="text-2xl font-extrabold text-[#4A83E7] py-1"><Span class="text-[#252525]">Models</Span> We Offer
+            </h2>
+            <p class="text-sm xl:text-lg opacity-[0.5]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt</p>
+          </div>
+
+
+        </div>
+        <div class="portion-2  flex flex-col justify-end">
+          <div class="hero-pic hidden lg:block absolute right-0 lg:bottom-[-10rem] 2xl:bottom-[-5rem]">
+            <img src="Static/Images/Hero-Background.png">
+          </div>
+
         </div>
       </div>
-        <button class="px-6  rounded-3xl hover:bg-blue-700 hover:cursor-pointer bg-[#4A83E7] text-white mt-7 text-sm leading-10">Learn More</button>
-        <div class="imgs relative">
-          
-          <div class="rounded-arrow absolute left-3 -top-7 lg:left-[8.5rem] -z-10"><img src="Static/Images/big=rotate-arrow.png" alt=""> </div>
+      <div class="container px-3 lg:px-0 mx-auto mb-10">
+        <div class="right-triangles absolute right-0"><img src="Static/Images/right-arrow.png"></div>
+        <div class="portion-3 md:mx-[71.2031px] lg:mx-0 lg:flex">
+          <div class="heding-para text-[#252525] py-2 lg:max-w-[350px] xl:max-w-[500px] relative">
+            <h2 class="text-lg lg:text-xl font-extrabold text-[#4A83E7] py-1" ">Projects based Out-Sourcing</h2>
+      <p class=" text-sm xl:text-lg opacity-[0.5]">Project-based outsourcing: Efficiently tapping into
+              external expertise to complete tasks and projects,
+              optimizing resources and achieving business goals.</p>
+              <button
+                class="mt-5 text-white text-sm bg-[#4A83E7] rounded-2xl px-4 py-1 lg:px-6 lg:py-[6px] hover:bg-blue-700 hover:cursor-pointer">View
+                More</button>
+              <div class="arrow absolute right-[5rem] hidden lg:block"><img src="Static/Images/short-arrow.png"
+                  class="h-[70px] xl:h-auto"></div>
+          </div>
+          <div class="heding-para text-[#252525] lg:max-w-[350px] xl:max-w-[470px] lg:mx-auto relative mt-6">
+            <h2 class="text-lg lg:text-xl font-extrabold text-[#4A83E7] py-1" ">Dedicated Team Out-Staffing</h2>
+      <p class=" text-sm xl:text-lg opacity-[0.5]">Dedicated team out-staffing: Your extended,
+              dedicated remote team for scalable, long-term
+              project support</p>
+              <button
+                class="mt-5 text-white text-sm bg-[#4A83E7] rounded-3xl px-4 py-1 lg:px-6 lg:py-[6px] hover:bg-blue-700 hover:cursor-pointer">View
+                More</button>
+              <div class="arrow absolute right-[2rem] -bottom-12 hidden lg:block"><img
+                  src="Static/Images/extra-short-arrow.png"></div>
+          </div>
         </div>
-        <div class="heding-para text-[#252525] mt-[15rem] lg:mb-5">
-          <h2 class="text-2xl font-extrabold text-[#4A83E7] py-1"><Span class="text-[#252525]">Models</Span> We Offer</h2>
-        <p class="text-sm xl:text-lg opacity-[0.5]">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt</p>
       </div>
-        
-      
       </div>
-      <div class="portion-2  flex flex-col justify-end">
-        <div class="hero-pic hidden lg:block absolute right-0 lg:bottom-[-10rem] 2xl:bottom-[-5rem]">
-          <img src="Static/Images/Hero-Background.png">
-        </div>
-        
+      <div class="hero-last-pic w-full">
+        <img src="Static/Images/hero-footer.png" class="w-full">
       </div>
-     </div>
-     <div class="container px-3 lg:px-0 mx-auto mb-10">
-      <div class="right-triangles absolute right-0"><img src="Static/Images/right-arrow.png"></div>
-      <div class="portion-3 md:mx-[71.2031px] lg:mx-0 lg:flex">
-      <div class="heding-para text-[#252525] py-2 lg:max-w-[350px] xl:max-w-[500px] relative">
-        <h2 class="text-lg lg:text-xl font-extrabold text-[#4A83E7] py-1" ">Projects based Out-Sourcing</h2>
-      <p class="text-sm xl:text-lg opacity-[0.5]">Project-based outsourcing: Efficiently tapping into
-        external expertise to complete tasks and projects,
-        optimizing resources and achieving business goals.</p>
-        <button class="mt-5 text-white text-sm bg-[#4A83E7] rounded-2xl px-4 py-1 lg:px-6 lg:py-[6px] hover:bg-blue-700 hover:cursor-pointer">View More</button>
-        <div class="arrow absolute right-[5rem] hidden lg:block"><img src="Static/Images/short-arrow.png" class="h-[70px] xl:h-auto"></div>
-    </div>
-      <div class="heding-para text-[#252525] lg:max-w-[350px] xl:max-w-[470px] lg:mx-auto relative mt-6">
-        <h2 class="text-lg lg:text-xl font-extrabold text-[#4A83E7] py-1" ">Dedicated Team Out-Staffing</h2>
-      <p class="text-sm xl:text-lg opacity-[0.5]">Dedicated team out-staffing: Your extended,
-        dedicated remote team for scalable, long-term
-        project support</p>
-        <button class="mt-5 text-white text-sm bg-[#4A83E7] rounded-3xl px-4 py-1 lg:px-6 lg:py-[6px] hover:bg-blue-700 hover:cursor-pointer">View More</button>
-        <div class="arrow absolute right-[2rem] -bottom-12 hidden lg:block"><img src="Static/Images/extra-short-arrow.png"></div>
-       </div>
-        </div>
-        </div>
-     </div>
-     <div class="hero-last-pic w-full">
-      <img src="Static/Images/hero-footer.png" class="w-full">
-     </div>
-      </section>
-      <section class="business-booster">
-        <div class="container py-4 px-3 lg:px-0 lg:flex mx-auto">
-          <div class="lg:w-[50%]">
+    </section>
+    <section class="business-booster">
+      <div class="container py-4 px-3 lg:px-0 lg:flex mx-auto">
+        <div class="lg:w-[50%]">
           <div class="heading my-7 lg:my-16  max-w-[550px] lg:max-w-[470px] mx-auto">
             <h2 class="text-2xl lg:text-[40px] lg:leading-10 font-semibold mb-8">Services That Lead The
               Way To Better <span class="text-[#4A83E7]">Business</span></h2>
-              <p class="opacity-50 text-sm lg:text-lg">Faucibus fringilla sed integer cursus tellus et, quis ultricies. Aliquam, faucibus arcu 
-                in laoreet ac elementum in eget. Massa urna viverra vulputate euismod pulvinar nibh in vel. Laoreet bl</p>
+            <p class="opacity-50 text-sm lg:text-lg">Faucibus fringilla sed integer cursus tellus et, quis ultricies.
+              Aliquam, faucibus arcu
+              in laoreet ac elementum in eget. Massa urna viverra vulputate euismod pulvinar nibh in vel. Laoreet bl</p>
           </div>
         </div>
-          <div class="technologies md:max-w-[550px] md:mx-auto lg:w-[50%] lg:flex flex-wrap lg:py-16 xl:gap-x-4">
-            <div class="user-experience  flex items-center lg:justify-center lg:w-2/4 xl:max-w-[250px]">
-              <div class="logo mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="79" viewBox="0 0 80 79" fill="none">
-                <path d="M79.6836 39.6715L61.6965 70.826L25.7223 70.826L7.73517 39.6715L25.7223 8.51689L61.6965 8.51689L79.6836 39.6715Z" fill="#4A83E7" fill-opacity="0.25"/>
-                <path d="M72.8701 36.7291L54.883 67.8837L18.9088 67.8837L0.921698 36.7291L18.9088 5.57451L54.883 5.57451L72.8701 36.7291Z" fill="#4A83E7" fill-opacity="0.25"/>
-                <path d="M72.8701 42.7691L54.883 73.9237L18.9088 73.9237L0.921698 42.7691L18.9088 11.6145L54.883 11.6146L72.8701 42.7691Z" fill="#4A83E7" fill-opacity="0.25"/>
-                <path d="M75.0771 39.6715L57.09 70.826L21.1158 70.826L3.12873 39.6715L21.1158 8.51689L57.09 8.51689L75.0771 39.6715Z" fill="url(#paint0_linear_1474_2498)"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M43.5135 52.9009H45.1672C45.4715 52.9009 45.7184 53.1478 45.7184 53.4521C45.7184 53.7564 45.4715 54.0033 45.1672 54.0033H33.0399C32.7356 54.0033 32.4887 53.7564 32.4887 53.4521C32.4887 53.1478 32.7356 52.9009 33.0399 52.9009H34.6936V50.6959H43.5135V52.9009ZM56.7432 46.286V28.6463C56.7432 26.8195 55.2626 25.3389 53.4358 25.3389H24.7713C22.9445 25.3389 21.4639 26.8195 21.4639 28.6463V46.286C21.4639 48.1128 22.9445 49.5934 24.7713 49.5934H53.4358C55.2626 49.5934 56.7432 48.1128 56.7432 46.286ZM32.3871 32.1426C32.2778 32.3927 32.0282 32.5675 31.7378 32.5675C31.3467 32.5675 31.0296 32.2504 31.0296 31.8593C31.0296 31.4681 31.3467 31.1511 31.7378 31.1511C32.0282 31.1511 32.2778 31.3259 32.3871 31.576H38.3952V31.4344C38.3952 31.2779 38.5221 31.1511 38.6785 31.1511H39.5284C39.6849 31.1511 39.8117 31.2779 39.8117 31.4344V31.576H45.8198C45.9291 31.3259 46.1787 31.1511 46.4691 31.1511C46.8602 31.1511 47.1773 31.4681 47.1773 31.8593C47.1773 32.2504 46.8602 32.5675 46.4691 32.5675C46.1787 32.5675 45.9291 32.3927 45.8198 32.1426H41.9921C44.5725 33.1995 46.4508 35.6282 46.7174 38.5167H46.894C47.0505 38.5167 47.1773 38.6436 47.1773 38.8V39.6499C47.1773 39.8063 47.0505 39.9331 46.894 39.9331H46.0441C45.8877 39.9331 45.7609 39.8063 45.7609 39.6499V38.8C45.7609 38.6436 45.8877 38.5167 46.0441 38.5167H46.1484C45.8875 35.9027 44.2004 33.7024 41.8785 32.7092H41.8736C41.2292 32.434 40.5366 32.2508 39.8117 32.178V32.2842C39.8117 32.4407 39.6848 32.5675 39.5284 32.5675H38.6785C38.5221 32.5675 38.3952 32.4407 38.3952 32.2842V32.178C37.6703 32.2508 36.9777 32.434 36.3333 32.7092H36.3285C34.0065 33.7024 32.3194 35.9027 32.0585 38.5168H32.1628C32.3193 38.5168 32.446 38.6436 32.446 38.8V39.6499C32.446 39.8063 32.3193 39.9332 32.1628 39.9332H31.3128C31.1563 39.9332 31.0296 39.8063 31.0296 39.6499V38.8C31.0296 38.6436 31.1563 38.5168 31.3128 38.5168H31.4895C31.7561 35.6283 33.6344 33.1995 36.2148 32.1426H32.3871ZM31.8794 39.0833V39.3666H31.5962V39.0833H31.8794ZM46.6107 39.0833V39.3666H46.3274V39.0833H46.6107ZM39.67 33.2758H39.7384C39.8655 33.2758 39.977 33.3603 40.0113 33.4827L41.8719 40.1277C41.9127 40.2735 41.8944 40.4283 41.8192 40.5597C41.5907 40.9597 41.0576 41.9255 40.486 43.1911L40.4529 43.2648C40.3811 43.4246 40.3089 43.5891 40.2367 43.7577H38.8201H38.8201L38.8156 43.7577H40.5199C40.6764 43.7577 40.8032 43.8845 40.8032 44.041V44.8908C40.8032 45.0473 40.6764 45.1741 40.5199 45.1741H37.687C37.5305 45.1741 37.4037 45.0473 37.4037 44.8908V44.041C37.4037 43.8845 37.5305 43.7577 37.687 43.7577L37.9703 43.7577C37.3098 42.2165 36.6493 41.0176 36.3877 40.5597C36.3126 40.4282 36.2942 40.2735 36.335 40.1277L38.1957 33.4827C38.2299 33.3603 38.3414 33.2758 38.4685 33.2758H38.5369C38.6933 33.2758 38.8202 33.4026 38.8202 33.5591V39.2229C38.8202 39.3284 38.7619 39.4262 38.6671 39.4726C38.3389 39.6335 38.1119 39.9678 38.1119 40.3581C38.1119 40.9828 38.6896 41.4725 39.3399 41.3223C39.71 41.2368 40.0044 40.9273 40.0761 40.5544C40.0995 40.4323 40.1006 40.3136 40.0826 40.2014L40.0829 40.2069C40.0382 39.9178 39.8679 39.6714 39.6295 39.5224C39.6014 39.5048 39.5723 39.4886 39.5424 39.4739C39.4468 39.4267 39.3868 39.3295 39.3868 39.2229V33.5591C39.3868 33.4026 39.5136 33.2758 39.67 33.2758Z" fill="white"/>
+        <div class="technologies md:max-w-[550px] md:mx-auto lg:w-[50%] lg:flex flex-wrap lg:py-16 xl:gap-x-4">
+          <div class="user-experience  flex items-center lg:justify-center lg:w-2/4 xl:max-w-[250px]">
+            <div class="logo mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="79" viewBox="0 0 80 79" fill="none">
+                <path
+                  d="M79.6836 39.6715L61.6965 70.826L25.7223 70.826L7.73517 39.6715L25.7223 8.51689L61.6965 8.51689L79.6836 39.6715Z"
+                  fill="#4A83E7" fill-opacity="0.25" />
+                <path
+                  d="M72.8701 36.7291L54.883 67.8837L18.9088 67.8837L0.921698 36.7291L18.9088 5.57451L54.883 5.57451L72.8701 36.7291Z"
+                  fill="#4A83E7" fill-opacity="0.25" />
+                <path
+                  d="M72.8701 42.7691L54.883 73.9237L18.9088 73.9237L0.921698 42.7691L18.9088 11.6145L54.883 11.6146L72.8701 42.7691Z"
+                  fill="#4A83E7" fill-opacity="0.25" />
+                <path
+                  d="M75.0771 39.6715L57.09 70.826L21.1158 70.826L3.12873 39.6715L21.1158 8.51689L57.09 8.51689L75.0771 39.6715Z"
+                  fill="url(#paint0_linear_1474_2498)" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M43.5135 52.9009H45.1672C45.4715 52.9009 45.7184 53.1478 45.7184 53.4521C45.7184 53.7564 45.4715 54.0033 45.1672 54.0033H33.0399C32.7356 54.0033 32.4887 53.7564 32.4887 53.4521C32.4887 53.1478 32.7356 52.9009 33.0399 52.9009H34.6936V50.6959H43.5135V52.9009ZM56.7432 46.286V28.6463C56.7432 26.8195 55.2626 25.3389 53.4358 25.3389H24.7713C22.9445 25.3389 21.4639 26.8195 21.4639 28.6463V46.286C21.4639 48.1128 22.9445 49.5934 24.7713 49.5934H53.4358C55.2626 49.5934 56.7432 48.1128 56.7432 46.286ZM32.3871 32.1426C32.2778 32.3927 32.0282 32.5675 31.7378 32.5675C31.3467 32.5675 31.0296 32.2504 31.0296 31.8593C31.0296 31.4681 31.3467 31.1511 31.7378 31.1511C32.0282 31.1511 32.2778 31.3259 32.3871 31.576H38.3952V31.4344C38.3952 31.2779 38.5221 31.1511 38.6785 31.1511H39.5284C39.6849 31.1511 39.8117 31.2779 39.8117 31.4344V31.576H45.8198C45.9291 31.3259 46.1787 31.1511 46.4691 31.1511C46.8602 31.1511 47.1773 31.4681 47.1773 31.8593C47.1773 32.2504 46.8602 32.5675 46.4691 32.5675C46.1787 32.5675 45.9291 32.3927 45.8198 32.1426H41.9921C44.5725 33.1995 46.4508 35.6282 46.7174 38.5167H46.894C47.0505 38.5167 47.1773 38.6436 47.1773 38.8V39.6499C47.1773 39.8063 47.0505 39.9331 46.894 39.9331H46.0441C45.8877 39.9331 45.7609 39.8063 45.7609 39.6499V38.8C45.7609 38.6436 45.8877 38.5167 46.0441 38.5167H46.1484C45.8875 35.9027 44.2004 33.7024 41.8785 32.7092H41.8736C41.2292 32.434 40.5366 32.2508 39.8117 32.178V32.2842C39.8117 32.4407 39.6848 32.5675 39.5284 32.5675H38.6785C38.5221 32.5675 38.3952 32.4407 38.3952 32.2842V32.178C37.6703 32.2508 36.9777 32.434 36.3333 32.7092H36.3285C34.0065 33.7024 32.3194 35.9027 32.0585 38.5168H32.1628C32.3193 38.5168 32.446 38.6436 32.446 38.8V39.6499C32.446 39.8063 32.3193 39.9332 32.1628 39.9332H31.3128C31.1563 39.9332 31.0296 39.8063 31.0296 39.6499V38.8C31.0296 38.6436 31.1563 38.5168 31.3128 38.5168H31.4895C31.7561 35.6283 33.6344 33.1995 36.2148 32.1426H32.3871ZM31.8794 39.0833V39.3666H31.5962V39.0833H31.8794ZM46.6107 39.0833V39.3666H46.3274V39.0833H46.6107ZM39.67 33.2758H39.7384C39.8655 33.2758 39.977 33.3603 40.0113 33.4827L41.8719 40.1277C41.9127 40.2735 41.8944 40.4283 41.8192 40.5597C41.5907 40.9597 41.0576 41.9255 40.486 43.1911L40.4529 43.2648C40.3811 43.4246 40.3089 43.5891 40.2367 43.7577H38.8201H38.8201L38.8156 43.7577H40.5199C40.6764 43.7577 40.8032 43.8845 40.8032 44.041V44.8908C40.8032 45.0473 40.6764 45.1741 40.5199 45.1741H37.687C37.5305 45.1741 37.4037 45.0473 37.4037 44.8908V44.041C37.4037 43.8845 37.5305 43.7577 37.687 43.7577L37.9703 43.7577C37.3098 42.2165 36.6493 41.0176 36.3877 40.5597C36.3126 40.4282 36.2942 40.2735 36.335 40.1277L38.1957 33.4827C38.2299 33.3603 38.3414 33.2758 38.4685 33.2758H38.5369C38.6933 33.2758 38.8202 33.4026 38.8202 33.5591V39.2229C38.8202 39.3284 38.7619 39.4262 38.6671 39.4726C38.3389 39.6335 38.1119 39.9678 38.1119 40.3581C38.1119 40.9828 38.6896 41.4725 39.3399 41.3223C39.71 41.2368 40.0044 40.9273 40.0761 40.5544C40.0995 40.4323 40.1006 40.3136 40.0826 40.2014L40.0829 40.2069C40.0382 39.9178 39.8679 39.6714 39.6295 39.5224C39.6014 39.5048 39.5723 39.4886 39.5424 39.4739C39.4468 39.4267 39.3868 39.3295 39.3868 39.2229V33.5591C39.3868 33.4026 39.5136 33.2758 39.67 33.2758Z"
+                  fill="white" />
                 <defs>
-                  <linearGradient id="paint0_linear_1474_2498" x1="75.0771" y1="39.6715" x2="3.12873" y2="39.6715" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#4D9AE1"/>
-                    <stop offset="1" stop-color="#A2C3FF"/>
+                  <linearGradient id="paint0_linear_1474_2498" x1="75.0771" y1="39.6715" x2="3.12873" y2="39.6715"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4D9AE1" />
+                    <stop offset="1" stop-color="#A2C3FF" />
                   </linearGradient>
                 </defs>
               </svg>
             </div>
             <div class="text">
               <h2 class="uppercase mb-2 text-[#609FFF] font-extrabold">User Experience</h2>
-              <p class="text-[12px] text-[#414141]">Viverra ut potenti aliquam feugiat dui imperdiet laoreet tempus sed</p>
+              <p class="text-[12px] text-[#414141]">Viverra ut potenti aliquam feugiat dui imperdiet laoreet tempus sed
+              </p>
             </div>
-            </div>
-          
-        
-            <div class="app-developmente flex items-center lg:justify-center lg:w-2/4 xl:max-w-[250px]">
-              <div class="logo mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="79" viewBox="0 0 80 79" fill="none">
-                  <path d="M79.6846 39.8736L61.6975 71.0282L25.7233 71.0282L7.73615 39.8736L25.7233 8.71904L61.6975 8.71904L79.6846 39.8736Z" fill="#4A83E7" fill-opacity="0.25"/>
-                  <path d="M72.8701 36.9312L54.883 68.0858L18.9088 68.0858L0.921698 36.9312L18.9088 5.77666L54.883 5.77666L72.8701 36.9312Z" fill="#4A83E7" fill-opacity="0.25"/>
-                  <path d="M72.8701 42.9713L54.883 74.1259L18.9088 74.1259L0.921698 42.9713L18.9088 11.8167L54.883 11.8167L72.8701 42.9713Z" fill="#4A83E7" fill-opacity="0.25"/>
-                  <path d="M75.0771 39.8736L57.09 71.0282L21.1158 71.0282L3.12873 39.8736L21.1158 8.71904L57.09 8.71904L75.0771 39.8736Z" fill="url(#paint0_linear_1474_2524)"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M26.5225 25.4541C26.5225 23.7972 27.8656 22.4541 29.5225 22.4541H44.2687C45.9255 22.4541 47.2687 23.7972 47.2687 25.4541V54.2928C47.2687 55.9496 45.9255 57.2928 44.2687 57.2928H29.5225C27.8656 57.2928 26.5225 55.9496 26.5225 54.2928V25.4541ZM31.1604 55.8808C31.1604 55.694 31.3118 55.5425 31.4986 55.5425H42.2918C42.4786 55.5425 42.63 55.694 42.63 55.8808C42.63 56.0676 42.4786 56.219 42.2918 56.219H31.4986C31.3118 56.219 31.1604 56.0676 31.1604 55.8808ZM34.8716 37.9788L30.5277 39.9957V40.7739L34.8725 42.7929V41.8337L31.5866 40.3947V40.3767L34.8716 38.938V37.9788ZM35.5428 43.1541L37.4794 36.5926H38.3932L36.4566 43.1541H35.5428ZM38.9181 42.792L43.2621 40.8009V39.9699L38.9181 37.9788V38.9368L42.2757 40.3767V40.3938L38.9181 41.8328V42.792ZM32.719 24.5236C32.719 24.1013 33.0614 23.7589 33.4837 23.7589H33.5157C33.9381 23.7589 34.2805 24.1013 34.2805 24.5236C34.2805 24.946 33.9381 25.2884 33.5157 25.2884H33.4837C33.0614 25.2884 32.719 24.946 32.719 24.5236ZM35.4381 23.7589C35.0158 23.7589 34.6734 24.1013 34.6734 24.5236C34.6734 24.946 35.0158 25.2884 35.4381 25.2884H40.2068C40.6292 25.2884 40.9716 24.946 40.9716 24.5236C40.9716 24.1013 40.6292 23.7589 40.2068 23.7589H35.4381Z" fill="white"/>
-                  <defs>
-                    <linearGradient id="paint0_linear_1474_2524" x1="75.0771" y1="39.8736" x2="3.12873" y2="39.8736" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#4D9AE1"/>
-                      <stop offset="1" stop-color="#A2C3FF"/>
-                    </linearGradient>
-                  </defs>
-                </svg>
+          </div>
+
+
+          <div class="app-developmente flex items-center lg:justify-center lg:w-2/4 xl:max-w-[250px]">
+            <div class="logo mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="79" viewBox="0 0 80 79" fill="none">
+                <path
+                  d="M79.6846 39.8736L61.6975 71.0282L25.7233 71.0282L7.73615 39.8736L25.7233 8.71904L61.6975 8.71904L79.6846 39.8736Z"
+                  fill="#4A83E7" fill-opacity="0.25" />
+                <path
+                  d="M72.8701 36.9312L54.883 68.0858L18.9088 68.0858L0.921698 36.9312L18.9088 5.77666L54.883 5.77666L72.8701 36.9312Z"
+                  fill="#4A83E7" fill-opacity="0.25" />
+                <path
+                  d="M72.8701 42.9713L54.883 74.1259L18.9088 74.1259L0.921698 42.9713L18.9088 11.8167L54.883 11.8167L72.8701 42.9713Z"
+                  fill="#4A83E7" fill-opacity="0.25" />
+                <path
+                  d="M75.0771 39.8736L57.09 71.0282L21.1158 71.0282L3.12873 39.8736L21.1158 8.71904L57.09 8.71904L75.0771 39.8736Z"
+                  fill="url(#paint0_linear_1474_2524)" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M26.5225 25.4541C26.5225 23.7972 27.8656 22.4541 29.5225 22.4541H44.2687C45.9255 22.4541 47.2687 23.7972 47.2687 25.4541V54.2928C47.2687 55.9496 45.9255 57.2928 44.2687 57.2928H29.5225C27.8656 57.2928 26.5225 55.9496 26.5225 54.2928V25.4541ZM31.1604 55.8808C31.1604 55.694 31.3118 55.5425 31.4986 55.5425H42.2918C42.4786 55.5425 42.63 55.694 42.63 55.8808C42.63 56.0676 42.4786 56.219 42.2918 56.219H31.4986C31.3118 56.219 31.1604 56.0676 31.1604 55.8808ZM34.8716 37.9788L30.5277 39.9957V40.7739L34.8725 42.7929V41.8337L31.5866 40.3947V40.3767L34.8716 38.938V37.9788ZM35.5428 43.1541L37.4794 36.5926H38.3932L36.4566 43.1541H35.5428ZM38.9181 42.792L43.2621 40.8009V39.9699L38.9181 37.9788V38.9368L42.2757 40.3767V40.3938L38.9181 41.8328V42.792ZM32.719 24.5236C32.719 24.1013 33.0614 23.7589 33.4837 23.7589H33.5157C33.9381 23.7589 34.2805 24.1013 34.2805 24.5236C34.2805 24.946 33.9381 25.2884 33.5157 25.2884H33.4837C33.0614 25.2884 32.719 24.946 32.719 24.5236ZM35.4381 23.7589C35.0158 23.7589 34.6734 24.1013 34.6734 24.5236C34.6734 24.946 35.0158 25.2884 35.4381 25.2884H40.2068C40.6292 25.2884 40.9716 24.946 40.9716 24.5236C40.9716 24.1013 40.6292 23.7589 40.2068 23.7589H35.4381Z"
+                  fill="white" />
+                <defs>
+                  <linearGradient id="paint0_linear_1474_2524" x1="75.0771" y1="39.8736" x2="3.12873" y2="39.8736"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4D9AE1" />
+                    <stop offset="1" stop-color="#A2C3FF" />
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
             <div class="text">
               <h2 class="uppercase mb-2 text-[#609FFF] font-extrabold">App Development</h2>
-              <p class="text-[12px] text-[#414141]">Viverra ut potenti aliquam feugiat dui imperdiet laoreet tempus sed</p>
+              <p class="text-[12px] text-[#414141]">Viverra ut potenti aliquam feugiat dui imperdiet laoreet tempus sed
+              </p>
             </div>
-            </div>
-          
-            <div class="web-development flex items-center lg:justify-center lg:w-2/4 xl:max-w-[250px]">
-              <div class="logo mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="78" viewBox="0 0 80 78" fill="none">
-                  <path d="M79.2314 38.9166L61.2443 70.0712L25.2701 70.0712L7.28303 38.9166L25.2701 7.76201L61.2443 7.76201L79.2314 38.9166Z" fill="#4A83E7" fill-opacity="0.25"/>
-                  <path d="M72.417 35.9742L54.4299 67.1288L18.4557 67.1288L0.468573 35.9742L18.4557 4.81963L54.4299 4.81963L72.417 35.9742Z" fill="#4A83E7" fill-opacity="0.25"/>
-                  <path d="M72.417 42.0142L54.4299 73.1688L18.4557 73.1688L0.468573 42.0142L18.4557 10.8597L54.4299 10.8597L72.417 42.0142Z" fill="#4A83E7" fill-opacity="0.25"/>
-                  <path d="M74.624 38.9166L56.6369 70.0712L20.6627 70.0712L2.6756 38.9166L20.6627 7.76201L56.6369 7.76201L74.624 38.9166Z" fill="url(#paint0_linear_1474_2512)"/>
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M44.2596 51.146H45.9133C46.2176 51.146 46.4645 51.3929 46.4645 51.6972C46.4645 52.0015 46.2176 52.2485 45.9133 52.2485H33.786C33.4817 52.2485 33.2348 52.0015 33.2348 51.6972C33.2348 51.3929 33.4817 51.146 33.786 51.146H35.4397V48.941H44.2596V51.146ZM57.4893 44.5311V26.8914C57.4893 25.0646 56.0087 23.584 54.1819 23.584H25.5174C23.6906 23.584 22.21 25.0646 22.21 26.8914V44.5311C22.21 46.3579 23.6906 47.8385 25.5174 47.8385H54.1819C56.0087 47.8385 57.4893 46.3579 57.4893 44.5311ZM36.8765 32.643L30.4926 35.607V36.7507L36.8778 39.7177V38.3082L32.0488 36.1934V36.1669L36.8765 34.0525V32.643ZM37.8618 40.2484L40.7079 30.6056H42.0509L39.2048 40.2484H37.8618ZM42.8236 39.7164L49.2075 36.7903V35.5691L42.8236 32.643V34.0508L47.7579 36.1669V36.1921L42.8236 38.3069V39.7164Z" fill="white"/>
-                  <defs>
-                    <linearGradient id="paint0_linear_1474_2512" x1="74.624" y1="38.9166" x2="2.6756" y2="38.9166" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#4D9AE1"/>
-                      <stop offset="1" stop-color="#A2C3FF"/>
-                    </linearGradient>
-                  </defs>
-                </svg>
+          </div>
+
+          <div class="web-development flex items-center lg:justify-center lg:w-2/4 xl:max-w-[250px]">
+            <div class="logo mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="78" viewBox="0 0 80 78" fill="none">
+                <path
+                  d="M79.2314 38.9166L61.2443 70.0712L25.2701 70.0712L7.28303 38.9166L25.2701 7.76201L61.2443 7.76201L79.2314 38.9166Z"
+                  fill="#4A83E7" fill-opacity="0.25" />
+                <path
+                  d="M72.417 35.9742L54.4299 67.1288L18.4557 67.1288L0.468573 35.9742L18.4557 4.81963L54.4299 4.81963L72.417 35.9742Z"
+                  fill="#4A83E7" fill-opacity="0.25" />
+                <path
+                  d="M72.417 42.0142L54.4299 73.1688L18.4557 73.1688L0.468573 42.0142L18.4557 10.8597L54.4299 10.8597L72.417 42.0142Z"
+                  fill="#4A83E7" fill-opacity="0.25" />
+                <path
+                  d="M74.624 38.9166L56.6369 70.0712L20.6627 70.0712L2.6756 38.9166L20.6627 7.76201L56.6369 7.76201L74.624 38.9166Z"
+                  fill="url(#paint0_linear_1474_2512)" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M44.2596 51.146H45.9133C46.2176 51.146 46.4645 51.3929 46.4645 51.6972C46.4645 52.0015 46.2176 52.2485 45.9133 52.2485H33.786C33.4817 52.2485 33.2348 52.0015 33.2348 51.6972C33.2348 51.3929 33.4817 51.146 33.786 51.146H35.4397V48.941H44.2596V51.146ZM57.4893 44.5311V26.8914C57.4893 25.0646 56.0087 23.584 54.1819 23.584H25.5174C23.6906 23.584 22.21 25.0646 22.21 26.8914V44.5311C22.21 46.3579 23.6906 47.8385 25.5174 47.8385H54.1819C56.0087 47.8385 57.4893 46.3579 57.4893 44.5311ZM36.8765 32.643L30.4926 35.607V36.7507L36.8778 39.7177V38.3082L32.0488 36.1934V36.1669L36.8765 34.0525V32.643ZM37.8618 40.2484L40.7079 30.6056H42.0509L39.2048 40.2484H37.8618ZM42.8236 39.7164L49.2075 36.7903V35.5691L42.8236 32.643V34.0508L47.7579 36.1669V36.1921L42.8236 38.3069V39.7164Z"
+                  fill="white" />
+                <defs>
+                  <linearGradient id="paint0_linear_1474_2512" x1="74.624" y1="38.9166" x2="2.6756" y2="38.9166"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4D9AE1" />
+                    <stop offset="1" stop-color="#A2C3FF" />
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
             <div class="text">
               <h2 class="uppercase mb-2 text-[#609FFF] font-extrabold">Web Development</h2>
-              <p class="text-[12px] text-[#414141]">Viverra ut potenti aliquam feugiat dui imperdiet laoreet tempus sed</p>
+              <p class="text-[12px] text-[#414141]">Viverra ut potenti aliquam feugiat dui imperdiet laoreet tempus sed
+              </p>
             </div>
-            </div>
+          </div>
 
-            <div class="game-development flex items-center lg:justify-center lg:w-2/4 xl:max-w-[250px]">
-              <div class="logo mr-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="79" viewBox="0 0 80 79" fill="none">
-                  <path d="M79.2305 39.8736L61.2434 71.0282L25.2692 71.0282L7.28205 39.8736L25.2692 8.71904L61.2434 8.71904L79.2305 39.8736Z" fill="#4A83E7" fill-opacity="0.25"/>
-                  <path d="M72.417 36.9312L54.4299 68.0858L18.4557 68.0858L0.468573 36.9312L18.4557 5.77666L54.4299 5.77666L72.417 36.9312Z" fill="#4A83E7" fill-opacity="0.25"/>
-                  <path d="M72.417 42.9713L54.4299 74.1259L18.4557 74.1259L0.468573 42.9713L18.4557 11.8167L54.4299 11.8167L72.417 42.9713Z" fill="#4A83E7" fill-opacity="0.25"/>
-                  <path d="M74.624 39.8736L56.6369 71.0282L20.6627 71.0282L2.6756 39.8736L20.6627 8.71904L56.6369 8.71904L74.624 39.8736Z" fill="url(#paint0_linear_1474_2540)"/>
-                  <path d="M58.5232 46.2438L56.1987 36.3587C55.0214 31.965 51.04 28.9102 46.4911 28.9102H30.808C26.2591 28.9102 22.2778 31.9649 21.1005 36.3587L18.776 46.2438C18.181 49.0794 19.818 51.9085 22.5741 52.8049L22.71 52.8485C25.2608 53.6789 28.0437 52.6087 29.3826 50.2842L31.4051 47.2935C31.9129 46.4119 32.853 45.8681 33.8693 45.8681H43.4301C44.4464 45.8681 45.3865 46.4119 45.8943 47.2935L47.9167 50.2842C49.2557 52.6087 52.0391 53.6789 54.59 52.8485L54.7253 52.8049C57.4812 51.9085 59.1183 49.0794 58.5232 46.2438ZM33.5763 39.6194H30.3201V42.8761H27.4852V39.6194H24.229V36.7857H27.4852V33.5302H30.3201V36.7857H33.5763V39.6194Z" fill="white"/>
-                  <path d="M39.3135 37.934L44.07 35.7256V36.7758L40.4729 38.3511V38.3709L44.0709 39.9466V40.9968L39.3135 38.7861V37.934Z" fill="#5AA1E6"/>
-                  <path d="M44.8047 41.3917L46.9252 34.207H47.9259L45.8053 41.3917H44.8047Z" fill="#5AA1E6"/>
-                  <path d="M53.2575 38.8156L48.501 40.9958V39.9456L52.1774 38.3699V38.3511L48.501 36.7745V35.7256L53.2575 37.9058V38.8156Z" fill="#5AA1E6"/>
-                  <defs>
-                    <linearGradient id="paint0_linear_1474_2540" x1="74.624" y1="39.8736" x2="2.6756" y2="39.8736" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#4D9AE1"/>
-                      <stop offset="1" stop-color="#A2C3FF"/>
-                    </linearGradient>
-                  </defs>
-                </svg>
+          <div class="game-development flex items-center lg:justify-center lg:w-2/4 xl:max-w-[250px]">
+            <div class="logo mr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="79" viewBox="0 0 80 79" fill="none">
+                <path
+                  d="M79.2305 39.8736L61.2434 71.0282L25.2692 71.0282L7.28205 39.8736L25.2692 8.71904L61.2434 8.71904L79.2305 39.8736Z"
+                  fill="#4A83E7" fill-opacity="0.25" />
+                <path
+                  d="M72.417 36.9312L54.4299 68.0858L18.4557 68.0858L0.468573 36.9312L18.4557 5.77666L54.4299 5.77666L72.417 36.9312Z"
+                  fill="#4A83E7" fill-opacity="0.25" />
+                <path
+                  d="M72.417 42.9713L54.4299 74.1259L18.4557 74.1259L0.468573 42.9713L18.4557 11.8167L54.4299 11.8167L72.417 42.9713Z"
+                  fill="#4A83E7" fill-opacity="0.25" />
+                <path
+                  d="M74.624 39.8736L56.6369 71.0282L20.6627 71.0282L2.6756 39.8736L20.6627 8.71904L56.6369 8.71904L74.624 39.8736Z"
+                  fill="url(#paint0_linear_1474_2540)" />
+                <path
+                  d="M58.5232 46.2438L56.1987 36.3587C55.0214 31.965 51.04 28.9102 46.4911 28.9102H30.808C26.2591 28.9102 22.2778 31.9649 21.1005 36.3587L18.776 46.2438C18.181 49.0794 19.818 51.9085 22.5741 52.8049L22.71 52.8485C25.2608 53.6789 28.0437 52.6087 29.3826 50.2842L31.4051 47.2935C31.9129 46.4119 32.853 45.8681 33.8693 45.8681H43.4301C44.4464 45.8681 45.3865 46.4119 45.8943 47.2935L47.9167 50.2842C49.2557 52.6087 52.0391 53.6789 54.59 52.8485L54.7253 52.8049C57.4812 51.9085 59.1183 49.0794 58.5232 46.2438ZM33.5763 39.6194H30.3201V42.8761H27.4852V39.6194H24.229V36.7857H27.4852V33.5302H30.3201V36.7857H33.5763V39.6194Z"
+                  fill="white" />
+                <path
+                  d="M39.3135 37.934L44.07 35.7256V36.7758L40.4729 38.3511V38.3709L44.0709 39.9466V40.9968L39.3135 38.7861V37.934Z"
+                  fill="#5AA1E6" />
+                <path d="M44.8047 41.3917L46.9252 34.207H47.9259L45.8053 41.3917H44.8047Z" fill="#5AA1E6" />
+                <path
+                  d="M53.2575 38.8156L48.501 40.9958V39.9456L52.1774 38.3699V38.3511L48.501 36.7745V35.7256L53.2575 37.9058V38.8156Z"
+                  fill="#5AA1E6" />
+                <defs>
+                  <linearGradient id="paint0_linear_1474_2540" x1="74.624" y1="39.8736" x2="2.6756" y2="39.8736"
+                    gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#4D9AE1" />
+                    <stop offset="1" stop-color="#A2C3FF" />
+                  </linearGradient>
+                </defs>
+              </svg>
             </div>
             <div class="text">
               <h2 class="uppercase mb-2 text-[#609FFF] font-extrabold">Game Development</h2>
-              <p class="text-[12px] text-[#414141]">Viverra ut potenti aliquam feugiat dui imperdiet laoreet tempus sed</p>
-            </div>
+              <p class="text-[12px] text-[#414141]">Viverra ut potenti aliquam feugiat dui imperdiet laoreet tempus sed
+              </p>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
 </html>
