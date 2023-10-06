@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "primary": "#000",
-        "secondary": "#272D35"
+        "secondary": "#4A83E7"
       },
       fontSize: {
         sm: ['14px'],
@@ -15,25 +15,28 @@ module.exports = {
         xxl: ['24px'],
         header: ['36px'],
       },
-      // position:{
-      //   "none": "unset"
-      // },
     },
+    // container: {
+    //   sm: ['540px'],
+    //   md: ['700px'],
+    //   lg: ['900px'],
+    //   xl: ['1140px'],
+    // },
     screens: {
       'sm': '576px',
-      // => @media (min-width: 640px) { ... }
+      // => @media (min-width: 5765px) { ... }
 
       'md': '768px',
       // => @media (min-width: 768px) { ... }
 
       'lg': '992px',
-      // => @media (min-width: 1024px) { ... }
+      // => @media (min-width: 992px) { ... }
 
       'xl': '1200px',
-      // => @media (min-width: 1280px) { ... }
+      // => @media (min-width: 1200px) { ... }
 
       '2xl': '1400px',
-      // => @media (min-width: 1536px) { ... }
+      // => @media (min-width: 1400px) { ... }
     }
   },
   plugins: [],
