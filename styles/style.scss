@@ -1,8 +1,9 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;800;900&family=Inter:wght@400;500;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; font-family: Be-Vietnam;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
 #chk-btn:checked + .navbar-menu {
   height: 160px;
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -89,5 +91,5 @@ body {
 }
 
 // .companies-poster{
-//     background: url(../Static/Images/Partners.png);
+//     background: url(../Static/Images/Partners.png); 
 // }
