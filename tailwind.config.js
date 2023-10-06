@@ -5,9 +5,10 @@ module.exports = {
     extend: {
       colors: {
         primary: "#000",
-        secondary: "#272D35",
         lightblue:"#4A83E7",
         darkblue:"#4A5AE7",
+        "primary": "#000",
+        "secondary": "#4A83E7"
       },
       fontSize: {
         sm: ["14px"],
@@ -17,9 +18,6 @@ module.exports = {
         xxl: ["24px"],
         header: ["36px"],
       },
-      // position:{
-      //   "none": "unset"
-      // },
     },
     container: {
       center: true,
