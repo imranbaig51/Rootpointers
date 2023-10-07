@@ -8,7 +8,6 @@ module.exports = {
         lightblue:"#4A83E7",
         darkblue:"#4A5AE7",
         "primary": "#000",
-        "secondary": "#4A83E7"
       },
       fontSize: {
         sm: ["14px"],
