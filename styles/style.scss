@@ -9,7 +9,7 @@
 @font-face {
   font-family: Be-Vietnam;
   src: url(../Static/Fonts/BeVietnam-Regular.ttf);
-}
+} 
 #chk-btn:checked + .navbar-menu {
   height: 160px;
 }
@@ -37,12 +37,14 @@ body {
   
 }
 .bg--gradient {
-  // background: linear-gradient(90deg, rgba(122, 160, 255, 0.22) 0%, rgba(128, 232, 255, 0.22) 100%);
   background: linear-gradient(
     0deg,
     rgba(122, 160, 255, 0.22) 0%,
     rgba(128, 232, 255, 0.22) 100%
   );
+}
+.bg--white{
+  background: white;
 }
 .footer-section {
   ul {
@@ -88,17 +90,16 @@ body {
     max-width: 992px !important;
   }
 }
+@media(min-width:1400px){
+  
+}
 @media (min-width: 1600px) {
   .container {
-    max-width: 1400px !important;
+    max-width: 1400px ;
   }
 }
 @media (min-width: 1800px) {
   .container {
-    max-width: 1400px !important;
+    max-width: 1400px;
   }
-}
-
-// .companies-poster{
-//     background: url(../Static/Images/Partners.png); 
-// }
+} 

@@ -37,6 +37,10 @@ body {
   background: linear-gradient(0deg, rgba(122, 160, 255, 0.22) 0%, rgba(128, 232, 255, 0.22) 100%);
 }
 
+.bg--white {
+  background: white;
+}
+
 .footer-section ul li a {
   position: relative;
 }
@@ -73,11 +77,11 @@ body {
 }
 @media (min-width: 1600px) {
   .container {
-    max-width: 1400px !important;
+    max-width: 1400px;
   }
 }
 @media (min-width: 1800px) {
   .container {
-    max-width: 1400px !important;
+    max-width: 1400px;
   }
 }/*# sourceMappingURL=style.css.map */

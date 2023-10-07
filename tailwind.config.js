@@ -8,7 +8,6 @@ module.exports = {
         lightblue:"#4A83E7",
         darkblue:"#4A5AE7",
         "primary": "#000",
-        "secondary": "#4A83E7"
       },
       fontSize: {
         sm: ["14px"],
@@ -41,6 +40,11 @@ module.exports = {
       "3xl": "1600px",
       // // => @media (min-width: 1536px) { ... }
       "4xl": "1800px",
+    },
+    backgroundImage: {
+      'gradient--1': 'linear-gradient(0deg, rgba(122, 160, 255, 0.22) 0%, rgba(128, 232, 255, 0.22) 100%)',
+      'gradient--2': 'linear-gradient(180deg, rgba(74, 131, 231, 0.55) 5.73%, rgba(151, 71, 255, 0.00) 100%)',
+      'bg--none' : 'none',
     },
   },
   plugins: [],
