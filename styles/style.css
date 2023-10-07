@@ -1,10 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;800;900&family=Inter:wght@400;500;600;700;800&display=swap");
 * {
   padding: 0;
-  margin: 0; 
-  font-family: Be-Vietnam;
-
+  margin: 0;
   box-sizing: border-box;
+  font-family: Be-Vietnam;
 }
 
 @font-face {
@@ -32,6 +31,10 @@ body {
 
 .bg--gradient {
   background: linear-gradient(0deg, rgba(122, 160, 255, 0.22) 0%, rgba(128, 232, 255, 0.22) 100%);
+}
+
+.bg--white {
+  background: white;
 }
 
 .footer-section ul li a {
@@ -70,11 +73,11 @@ body {
 }
 @media (min-width: 1600px) {
   .container {
-    max-width: 1400px !important;
+    max-width: 1400px;
   }
 }
 @media (min-width: 1800px) {
   .container {
-    max-width: 1400px !important;
+    max-width: 1400px;
   }
 }/*# sourceMappingURL=style.css.map */
