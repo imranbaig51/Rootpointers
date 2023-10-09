@@ -19,7 +19,6 @@ body {
   margin: 0;
   font-family: Be-Vietnam;
   font-size: 16px;
-  //   line-height: 1.2;
 }
 .interFont {
   font-family: "Inter", sans-serif;
@@ -42,6 +41,13 @@ body {
     rgba(122, 160, 255, 0.22) 0%,
     rgba(128, 232, 255, 0.22) 100%
   );
+}
+.contact-card{
+//   background-image: url(/Static/Images/Contact-Form.png);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+  background: linear-gradient(256deg, #9BB5F7 -66.11%, #CEE8FF 53.27%, #CEE8FF 53.27%);
+
 }
 .bg--white{
   background: white;
