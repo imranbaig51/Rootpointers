@@ -74,6 +74,17 @@ body {
   fill: #fff;
 }
 
+@media (min-width: 992px) {
+  .points-wrapper div:first-of-type {
+    margin-top: 0 !important;
+  }
+  .points-wrapper div:nth-child(2) {
+    margin-top: 250px;
+  }
+  .points-wrapper div:nth-child(odd) {
+    margin-top: -200px;
+  }
+}
 @media (min-width: 1200px) {
   .team-seaction .xl-max-w-992px {
     max-width: 992px !important;
