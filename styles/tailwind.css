@@ -2,4 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-
+@layer components {
+  .heading-21 {
+    @apply text-lightblue text-[18px] md:text-[22px] lg:text-[26px] xl:text-[30px] 2xl:text-[34px] font-extrabold mb-4 lg:mb-6;
+  }
+  .heading-22 {
+    @apply text-black text-[18px] md:text-[22px] lg:text-[26px] xl:text-[30px] 2xl:text-[34px] font-extrabold mb-4 lg:mb-6;
+  }
+  .p-tag {
+    @apply text-[14px] md:text-[16px] text-[#525167] mb-4;
+  }
+}
