@@ -122,4 +122,14 @@ body {
 } 
 
 
-
+ 
+.carosuel__indictors{
+  div[aria-current="true"]{
+    background-color: #4A83E7!important;
+    width: 1rem; 
+    height: 1rem; 
+  }
+  >div:hover{
+    background-color: #4A83E7!important;
+  }
+}
