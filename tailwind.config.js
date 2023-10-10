@@ -45,6 +45,9 @@ module.exports = {
     backgroundImage: {
       'gradient--1': 'linear-gradient(0deg, rgba(122, 160, 255, 0.22) 0%, rgba(128, 232, 255, 0.22) 100%)',
       'gradient--2': 'linear-gradient(180deg, rgba(74, 131, 231, 0.55) 5.73%, rgba(151, 71, 255, 0.00) 100%)',
+      'gradient--3': 'linear-gradient(180deg, #E7EFFF 0%, #FAF2FF 100%)',
+      'gradient--4': 'linear-gradient(180deg, #4A83E7 0%, #F2DFFF 100%)',
+      'gradient--5': 'linear-gradient(89deg, rgba(81, 98, 255, 0.22) -46.9%, rgba(128, 232, 255, 0.22) 125.81%)',
       'bg--none' : 'none',
     },
   },
