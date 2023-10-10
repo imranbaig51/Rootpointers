@@ -42,6 +42,24 @@ body {
     rgba(128, 232, 255, 0.22) 100%
   );
 }
+.info-inputs{
+  & input{
+   border-bottom: 1px solid rgba(46, 2, 73, 0.30);
+   max-width: 400px;
+   outline: none;
+   font-size: 14px;
+   color: #2E0249;
+   font-weight: 500;
+   @media (min-width: 992px){
+    font-size: 16px;
+   }
+  }
+}
+.Contact-input:focus::-webkit-input-placeholder {
+  color: #2E0249;
+  font-weight: 500;
+}
+
 .bg--white{
   background: white;
 }

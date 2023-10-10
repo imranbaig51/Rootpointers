@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-      <section class="navba relative z-10">
+      <section class="navbar relative z-10">
         <nav class="fixed left-0 right-0 bg-white">
           <div
             class="container flex items-center p-4 mx-auto justify-between lg:justify-normal"
@@ -885,7 +885,7 @@
             </p>
           </div>
           <div
-            class="questions max-w-[900px] [&>div]:bg-[#CEE8FF] [&>div]:min-h-[80px] lg:[&>div]:min-h-[90px] mx-auto [&>div]:rounded-[20px] [&>div]:my-6"
+            class="questions max-w-[900px] [&>div]:bg-[#CEE8FF] [&>div]:min-h-[80px] lg:[&>div]:min-h-[90px] mx-auto [&>div]:rounded-[20px] [&>div]:my-6 [&>div]:p-8"
           >
             <div class="first-of-type:h-[170px]"></div>
             <div></div>
@@ -895,7 +895,11 @@
         </div>
       </section>
       <section class="contact-us">
-        <div class="container mx-auto p-4 py-16">
+        <div class="relative">
+        <div class="triangles absolute top-[-48px] 3xl:top-14">
+          <img src="Static/Images/left-short-triangles.png">
+        </div>
+        <div class="container mx-auto p-4 pt-16 pb-24">
           <div
             class="heading max-w-[544px] lg:max-w-[1000px] 2xl:mt-12 2xl:pb-4 mx-auto text-center mb-20"
           >
@@ -909,15 +913,18 @@
             </p>
           </div>
           <div
-            class="contact-card rounded-3xl bg-[linear-gradient(256deg,_#9BB5F7_-66.11%,_#CEE8FF_53.27%,_#CEE8FF_53.27%);] lg:flex py-8"
+            class="contact-card rounded-3xl bg-[linear-gradient(256deg,_#9BB5F7_-66.11%,_#CEE8FF_53.27%,_#CEE8FF_53.27%);] lg:flex py-8 relative overflow-hidden"
           >
+          <div class="bubble absolute top-0 ">
+            <img src="Static/Images/big-bubble.png" class="w-[400px]">
+          </div>
             <div class="content lg:w-2/4">
-              <div class="max-w-[250px] lg:max-w-[450px] mx-auto p-6">
+              <div class="max-w-[250px] lg:max-w-[550px] mx-auto p-6">
                 <h2
-                  class="text-2xl lg:text-[40px] text-white leading-10 lg:leading-[4rem] font-bold mb-10"
+                  class="text-2xl lg:text-[40px] text-white leading-10 lg:leading-[4rem] font-bold lg:font-extrabold mb-10 lg:mb-20 relative z-10"
                 >
-                  Let’s discuss on something
-                  <span class="text-[#24126A]">Cool</span> together
+                  <span class="lg:block">Let’s discuss </span> on something
+                  <span class="text-[#24126A] font-bold lg:font-extrabold">Cool</span> together
                 </h2>
                 <ul
                   class="text-[#4A83E7] [&>li]:py-3 [&>li]:text-sm lg:[&>li]:text-md"
@@ -1010,7 +1017,7 @@
                     </a>
                   </li>
                 </ul>
-                <ul class="flex items-center justify-between mt-10">
+                <ul class="flex items-center justify-between mt-10 lg:mt-20 max-w-[202px]">
                   <li>
                     <div>
                       <a href="https://www.facebook.com/" target="_blank">
@@ -1075,20 +1082,34 @@
               </div>
               
             </div>
-            <div class="request-call m-6 lg:w-2/4">
-          <div class=" bg-white rounded-3xl p-4">
-            <h2 class=" text-[#2E0249] font-semibold text-lg">I'm interested in...</h2>
-               <div class="[&>span]:h-[30px] [&>span]:m-2 [&>span]:w-[80px] [&>span]:grid 
-                [&>span]:place-content-center [&>span]:border-[rgba(46,_2,_73,_0.30)] [&>span]:text-[rgba(46,_2,_73,_0.30)] [&>span]:font-semibold [&>span]:border-[1px]  [&>span]:rounded-lg text-[10px] flex flex-wrap">
-                <span class="hover:cursor-pointer bg-[#4A83E7] text-[white] ">UI/UX design</span>
-                <span class="hover:cursor-pointer hover:bg-[#4A83E7] hover:text-[white]">Web design</span>
-                <span class="hover:cursor-pointer hover:bg-[#4A83E7] hover:text-[white]">Web Develop</span>
-                <span class="hover:cursor-pointer hover:bg-[#4A83E7] hover:text-[white]">Other</span>
-                <span class="hover:cursor-pointer hover:bg-[#4A83E7] hover:text-[white]">Service</span>
+            <div class="request-call m-6 lg:ml-0 lg:w-2/4">
+          <div class=" bg-white rounded-3xl p-6 max-w-[496px] mx-auto">
+            <h2 class=" text-[#2E0249] font-semibold text-lg m-2">I'm interested in...</h2>
+               <div class="[&>span]:h-[30px] [&>span]:w-[80px] lg:[&>span]:w-[120px] lg:[&>span]:h-[40px] [&>span]:m-2 [&>span]:grid 
+                [&>span]:place-content-center [&>span]:border-[rgba(46,_2,_73,_0.30)] [&>span]:font-medium [&>span]:border-[1px] [&>span]:rounded-[6px] text-[10px] lg:text-[14px]  [&>span]:hover:cursor-pointer  flex flex-wrap ">
+                <span class="bg-[#4A83E7] transition-all duration-500 ease-in-out text-[white]">UI/UX design</span>
+                <span class="hover:text-[white] transition-all duration-500 ease-in-out hover:bg-[#4A83E7] text-[rgba(46,_2,_73,_0.30)]">Web design</span>
+                <span class="hover:text-[white] transition-all duration-500 ease-in-out hover:bg-[#4A83E7] text-[rgba(46,_2,_73,_0.30)]">Web Develop</span>
+                <span class="hover:text-[white] transition-all duration-500 ease-in-out hover:bg-[#4A83E7] text-[rgba(46,_2,_73,_0.30)]">Other</span>
+                <span class="hover:text-[white] transition-all duration-500 ease-in-out hover:bg-[#4A83E7] text-[rgba(46,_2,_73,_0.30)]">Service</span>
                </div>
+               <div class="info-inputs [&>input]:w-full [&>input]:my-4 lg:mt-4 [&>input]:mx-2 [&>input]:py-3">
+                <input class="Contact-input" type="text" @focus="showPlaceholder" placeholder="Your name">
+                <input class="Contact-input" type="text" placeholder="Your email">
+                <input class="Contact-input" type="text" placeholder="Your message">
+            </div>
+            <button class="send-button lg:h-[60px] max-w-[200px] bg-[#4A83E7] text-white flex justify-center rounded-2xl items-center px-3 lg:px-6 py-3 lg:mt-16 mt-6 mx-auto lg:mx-0 hover:bg-blue-400">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 25 24" fill="none" class="lg:h-[24px] lg:w-[25px]">
+                    <path d="M24.4471 1.02847C24.5017 0.892169 24.515 0.742859 24.4855 0.599044C24.456 0.45523 24.385 0.323236 24.2812 0.219426C24.1774 0.115616 24.0454 0.0445561 23.9015 0.0150549C23.7577 -0.0144463 23.6084 -0.00109103 23.4721 0.053465L1.65162 8.78197H1.65012L0.972125 9.05196C0.84371 9.10319 0.731953 9.18891 0.649198 9.29966C0.566443 9.41041 0.515912 9.54188 0.503185 9.67955C0.490458 9.81721 0.516031 9.95572 0.57708 10.0798C0.638129 10.2038 0.732277 10.3086 0.849125 10.3825L1.46412 10.7725L1.46562 10.7755L8.95812 15.5425L13.7251 23.035L13.7281 23.038L14.1181 23.653C14.1923 23.7694 14.2971 23.863 14.421 23.9237C14.545 23.9844 14.6833 24.0097 14.8207 23.9968C14.9581 23.9839 15.0892 23.9334 15.1998 23.8508C15.3103 23.7681 15.3959 23.6566 15.4471 23.5285L24.4471 1.02847ZM21.6976 3.86347L10.4566 15.1045L10.1341 14.5975C10.075 14.5044 9.99616 14.4256 9.90312 14.3665L9.39612 14.044L20.6371 2.80296L22.4041 2.09646L21.6991 3.86347H21.6976Z" fill="#EEEEEE"/>
+                  </svg>
+                </span>
+                <span class="ml-2 text-sm lg:text-base">Send Message</span>
+             </button>
           </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </main>
