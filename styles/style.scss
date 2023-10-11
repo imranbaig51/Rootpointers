@@ -15,7 +15,11 @@
 #chk-btn:checked+.navbar-menu {
   height: 160px;
 }
-
+html{
+  scroll-behavior: smooth !important;
+  scrollbar-color: #0387fa #ffffff !important;
+  scrollbar-width: thin !important;
+}
 body {
   padding: 0;
   margin: 0;
@@ -29,13 +33,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c7caca;
+  background:  #0387fa;
   border: 0.1em solid #fff;
   border-radius: 100vw;
 }
 
-:hover::-webkit-scrollbar-thumb:hover {
-  background-color: #ff6f58;
+::-webkit-scrollbar-thumb:hover {
+  background-color: #0457a0;
 }
 
 .interFont {
