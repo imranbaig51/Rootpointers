@@ -5,6 +5,11 @@
   box-sizing: border-box;
   font-family: Be-Vietnam;
 }
+html {
+  scroll-behavior: smooth !important;
+  scrollbar-color: #005eff #ffffff !important;
+  scrollbar-width: thin !important;
+}
 
 @font-face {
   font-family: Be-Vietnam;
@@ -21,6 +26,21 @@ body {
   font-size: 16px;
 }
 
+::-webkit-scrollbar {
+  width: 0.7em;
+  height: 0.6em;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4A83E7;
+  border: 0.1em solid #fff;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #005eff;
+}
+
 .interFont {
   font-family: "Inter", sans-serif;
 }
@@ -30,15 +50,28 @@ body {
 }
 
 .bg-gradient-modals {
-  background: linear-gradient(0deg, rgba(122, 160, 255, 0.44) 0%, rgba(128, 232, 255, 0.44) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(122, 160, 255, 0.44) 0%,
+    rgba(128, 232, 255, 0.44) 100%
+  );
 }
 
 .bg--gradient {
-  background: linear-gradient(0deg, rgba(122, 160, 255, 0.22) 0%, rgba(128, 232, 255, 0.22) 100%);
+  background: linear-gradient(
+    0deg,
+    rgba(122, 160, 255, 0.22) 0%,
+    rgba(128, 232, 255, 0.22) 100%
+  );
 }
 
 .contact-card {
-  background: linear-gradient(256deg, #9BB5F7 -66.11%, #CEE8FF 53.27%, #CEE8FF 53.27%);
+  background: linear-gradient(
+    256deg,
+    #9bb5f7 -66.11%,
+    #cee8ff 53.27%,
+    #cee8ff 53.27%
+  );
 }
 
 .bg--white {
@@ -90,7 +123,7 @@ body {
 }
 
 .active {
-  color: #4A83E7;
+  color: #4a83e7;
   text-decoration: underline;
 }
 
@@ -147,4 +180,4 @@ body {
   .container {
     max-width: 1400px;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
