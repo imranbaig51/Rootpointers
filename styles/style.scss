@@ -42,13 +42,24 @@ body {
     rgba(128, 232, 255, 0.22) 100%
   );
 }
-.contact-card{
-//   background-image: url(/Static/Images/Contact-Form.png);
-//   background-repeat: no-repeat;
-//   background-size: cover;
-  background: linear-gradient(256deg, #9BB5F7 -66.11%, #CEE8FF 53.27%, #CEE8FF 53.27%);
-
+.info-inputs{
+  & input{
+   border-bottom: 1px solid rgba(46, 2, 73, 0.30);
+   max-width: 400px;
+   outline: none;
+   font-size: 14px;
+   color: #2E0249;
+   font-weight: 500;
+   @media (min-width: 992px){
+    font-size: 16px;
+   }
+  }
 }
+.Contact-input:focus::-webkit-input-placeholder {
+  color: #2E0249;
+  font-weight: 500;
+}
+
 .bg--white{
   background: white;
 }
@@ -173,3 +184,16 @@ body {
     max-width: 1400px;
   }
 } 
+
+
+ 
+.carosuel__indictors{
+  div[aria-current="true"]{
+    background-color: #4A83E7!important;
+    width: 1rem; 
+    height: 1rem; 
+  }
+  >div:hover{
+    background-color: #4A83E7!important;
+  }
+}
