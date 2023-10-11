@@ -54,7 +54,7 @@ body {
 
 }
 
-.bg--gradient {
+.bg--gradient { 
   background: linear-gradient(0deg,
       rgba(122, 160, 255, 0.22) 0%,
       rgba(128, 232, 255, 0.22) 100%);
@@ -67,7 +67,7 @@ body {
   background: linear-gradient(256deg, #9BB5F7 -66.11%, #CEE8FF 53.27%, #CEE8FF 53.27%);
 }
 
-.bg--white {
+.bg--white { 
   background: white;
 }
 
@@ -208,4 +208,18 @@ body {
   .container {
     max-width: 1400px;
   }
+
+} 
+
+
+ 
+.carosuel__indictors{
+  div[aria-current="true"]{
+    background-color: #4A83E7!important;
+    width: 1rem; 
+    height: 1rem; 
+  }
+  >div:hover{
+    background-color: #4A83E7!important;
+  } 
 }
