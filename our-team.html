@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="navba relative z-10">
+    <header class="navba relative z-[999]">
         <nav class="fixed left-0 right-0 bg-white py-4">
             <div class="container flex items-center  mx-auto justify-between lg:justify-normal  ">
                 <div class="header-logo mr-16">
@@ -82,7 +82,8 @@
                         <h1 class="text-xl lg:text-2xl xl:text-[38px] 2xl:text-[48px] 
                             xl:leading-[3.5rem] font-extrabold mb-3">
                             OUR <span class="text-lightblue"> CREATIVE TEAM </span></h1>
-                        <p class="text-sm xl:text-lg 2xl:text-xl">Each and every one of our employees represent the spirit
+                        <p class="text-sm xl:text-lg 2xl:text-xl">Each and every one of our employees represent the
+                            spirit
                             of our company driven, committed and acutely aware of flow
                             limitless Hanover’s potential is to grow. </p>
 
@@ -106,8 +107,8 @@
 
         </section>
         <section class="managment-section pt-[1rem]">
-            <div class="container lg:px-[3.5rem]">
-                <div class="flex items-center justify-center flex-wrap gap-[1rem] md:gap-[2rem] lg:gap-[4rem]">
+            <div class="container lg:px-[3.5rem] relative">
+                <div class="flex items-center justify-center flex-wrap gap-[1rem] md:gap-[2rem] lg:gap-[4rem] ">
                     <div class="max-w-[210px]  w-full mb-6">
                         <div class="bg-darkblue flex items-center justify-center mt-[95px]
                          rounded-tr-[30px] rounded-tl-[30px] mb-2">
@@ -125,8 +126,8 @@
                                 alt="jawad">
                         </div>
                         <div class="text-center">
-                            <span class="block text-darkblue font-bold">Jawad Jutt</span>
-                            <span class="block text-darkblue">CF0</span>
+                            <span class="block text-darkblue font-bold">Ali Faraz Ababsi</span>
+                            <span class="block text-darkblue">Founder & CE0</span>
                         </div>
                     </div>
                     <div class="max-w-[210px]  w-full mb-6">
@@ -136,8 +137,8 @@
                                 alt="jawad">
                         </div>
                         <div class="text-center">
-                            <span class="block text-darkblue font-bold">Jawad Jutt</span>
-                            <span class="block text-darkblue">CF0</span>
+                            <span class="block text-darkblue font-bold">Mughees Mehdi</span>
+                            <span class="block text-darkblue">C00</span>
                         </div>
                     </div>
                 </div>
@@ -184,6 +185,10 @@
             2xl:max-w-[500px] 3xl:max-w-[100%]">
                 <img src="Static/Images/root-pointer-bg-img.png" width="508" height="666">
             </div>
+            <span class="absolute right-[20px] top-[-150px]  
+            rotate-12 hidden lg:block 2xl:right-[100px] 3xl:right-[200px] 4xl:right-[350px]">
+                <img src="Static/Images/rounded-pointer.svg" alt="">
+            </span>
         </section>
         <section class="projects-managment bg--gradient py-[4rem] mb-[5rem] lg:mb-[7rem]">
             <div class="container">
@@ -301,7 +306,7 @@
                     </ul>
                 </div>
                 <div class="w-full md:w-[50%] lg:w-[34%] bg-white py-[2rem] px-[1rem] lg:px-[3rem]
-                 lg:py-[3rem] rounded-[24px] lg:mt-[-40px]">
+                 lg:py-[3rem] rounded-[24px] lg:mt-[-40px] z-[10]">
                     <h3 class="text-lg font-semibold mb-3 lg:mb-5">Subscribe</h3>
                     <div class="relative max-w-[300px] w-full mb-5 lg:mb-7">
                         <input type="email" placeholder="" class="w-full px-4 py-2 border rounded-lg focus:ring-0 focus:border-blue-500 
@@ -354,7 +359,7 @@
         <span class="absolute right-0 bottom-[10%] "><img src="Static/Images/footer-bg-img.png" alt="">
         </span>
     </footer>
-    <script src="/script/script.js"> </script>
+
 
     <!-- <span>
         <svg>
@@ -402,22 +407,21 @@
             </symbol>
             <symbol id="arrow-right" viewBox="0 0 24 24">
                 <title>Arrow Right</title>
-                <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 5l7 7-7 7"
-              />
-              
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+
             </symbol>
             <symbol id="linkdin" viewBox="0 0 448 512">
                 <title>linkdin</title>
-                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/>
+                <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
             </symbol>
-          
+
 
         </svg>
     </div>
+
+    <script src="/script/script.js"> </script>
+
 </body>
 
 </html>
