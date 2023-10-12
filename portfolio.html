@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="navba relative z-10">
+    <header class="navba relative z-[999]">
         <nav class="fixed left-0 right-0 bg-white py-4">
             <div class="container flex items-center  mx-auto justify-between lg:justify-normal  ">
                 <div class="header-logo mr-16">
@@ -150,7 +150,7 @@
 
                 </div>
             </div>
-           
+
         </section>
 
         <section class="projects-modals bg-gradient-modals py-[4rem] ">
@@ -206,10 +206,17 @@
             <div class="container ">
                 <div class="py-8 w-[80%] md:max-w-[500px] lg:max-w-[600px] mx-auto text-center">
                     <h2 class="heading-21 text-center interFont">Mobile Aplication</h2>
-                    <p class="p-tag2 text-center">Rootpointers specializes in delivering high-quality,
-                        user-friendly mobile applications drive success for businesses across industries. </p>
+                    <div class="relative">
+                        <p class="p-tag2 text-center">Rootpointers specializes in delivering high-quality,
+                            user-friendly mobile applications drive success for businesses across industries. </p>
+                        <span
+                            class="absolute  right-[-150px] 2xl:right-[-200px] bottom-[-150px] z-[-1] 
+                            rotate-12 hidden lg:block">
+                            <img src="Static/Images/rounded-pointer.svg" alt="">
+                        </span>
+                    </div>
                 </div>
-                <div class="p-[2rem_0_3rem_0] px-[10px] text-[0.925rem] text-center lg:text-left
+                <div class="p-[2rem_0_3rem_0] px-[10px] relative z-[2] text-[0.925rem] text-center lg:text-left
                 flex flex-col-reverse md:flex-row justify-between md:text-start gap-4 w-full">
 
                     <div class="md:w-[39%] flex-[0_0_auto] mt-6 md:mt-0">
@@ -298,12 +305,12 @@
             </div>
             <span class="traingles absolute top-[20%] left-0 z-[-1]"><img src="Static/Images/left-triangles.png" alt="">
             </span>
-            <span class="traingles absolute bottom-[5%] right-0 z-[-1]"><img src="Static/Images/double-right-traingle-two.svg"
-                    alt="">
+            <span class="traingles absolute bottom-[5%] right-0 z-[-1]"><img
+                    src="Static/Images/double-right-traingle-two.svg" alt="">
             </span>
         </section>
 
-       
+
 
         <section class="games lg:my-[0] lg:bg-white relative">
             <div class="container z-[2]">
@@ -427,7 +434,7 @@
                     </ul>
                 </div>
                 <div class="w-full md:w-[50%] lg:w-[34%] bg-white py-[2rem] px-[1rem] lg:px-[3rem]
-                 lg:py-[3rem] rounded-[24px] lg:mt-[-40px]">
+                 lg:py-[3rem] rounded-[24px] lg:mt-[-40px]  z-[10]">
                     <h3 class="text-lg font-semibold mb-3 lg:mb-5">Subscribe</h3>
                     <div class="relative max-w-[300px] w-full mb-5 lg:mb-7">
                         <input type="email" placeholder="" class="w-full px-4 py-2 border rounded-lg focus:ring-0 focus:border-blue-500 
