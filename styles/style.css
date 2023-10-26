@@ -144,6 +144,22 @@ body {
   .points-wrapper div:nth-child(odd) {
     margin-top: -200px;
   }
+  .games-project .rowWrapper:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .games-project {
+    position: relative;
+  }
+  .games-project::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2px;
+    background-color: #B1ACAC;
+  }
   .navbar-menu {
     overflow: unset;
   }
