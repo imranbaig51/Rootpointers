@@ -1367,8 +1367,24 @@ video {
   max-width: 650px;
 }
 
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
+
 .max-w-\[900px\] {
   max-width: 900px;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[75\] {
+  max-width: 75;
+}
+
+.max-w-\[75\%\] {
+  max-width: 75%;
 }
 
 .flex-\[0_0_auto\] {
@@ -1423,10 +1439,6 @@ video {
   list-style-image: url('../Static/Images/bullet.svg');
 }
 
-.flex-row-reverse {
-  flex-direction: row-reverse;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -1479,6 +1491,10 @@ video {
   gap: 1rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1515,12 +1531,24 @@ video {
   border-radius: 36px;
 }
 
+.rounded-\[6px\] {
+  border-radius: 6px;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
 
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-\[\] {
+  border-radius: ;
+}
+
+.rounded-\[14px\] {
+  border-radius: 14px;
 }
 
 .rounded-r-lg {
@@ -1540,12 +1568,21 @@ video {
   border-width: 1px;
 }
 
+.border-\[1px\] {
+  border-width: 1px;
+}
+
 .border-t-\[1px\] {
   border-top-width: 1px;
 }
 
 .border-solid {
   border-style: solid;
+}
+
+.border-lightblue {
+  --tw-border-opacity: 1;
+  border-color: rgb(74 131 231 / var(--tw-border-opacity));
 }
 
 .border-t-\[\#00000055\] {
@@ -1640,6 +1677,10 @@ video {
 
 .bg-gradient--5 {
   background-image: linear-gradient(89deg, rgba(81, 98, 255, 0.22) -46.9%, rgba(128, 232, 255, 0.22) 125.81%);
+}
+
+.bg-gradient--6 {
+  background-image: linear-gradient(180deg, #E8F0FE 0%, #F8EDFF 100%);
 }
 
 .bg-cover {
@@ -1781,6 +1822,16 @@ video {
 .py-\[7rem\] {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+
+.py-\[\] {
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[6px\] {
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .pb-2 {
@@ -2213,6 +2264,10 @@ video {
     margin-right: auto;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -2393,6 +2448,10 @@ video {
     margin-bottom: 0px;
   }
 
+  .lg\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .lg\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -2523,6 +2582,10 @@ video {
 
   .lg\:w-\[25px\] {
     width: 25px;
+  }
+
+  .lg\:w-\[30\%\] {
+    width: 30%;
   }
 
   .lg\:w-\[34\%\] {
@@ -2687,6 +2750,14 @@ video {
 
   .lg\:rounded-\[233px_0_0_0\] {
     border-radius: 233px 0 0 0;
+  }
+
+  .lg\:rounded-\[\] {
+    border-radius: ;
+  }
+
+  .lg\:rounded-\[16px\] {
+    border-radius: 16px;
   }
 
   .lg\:border-2 {
