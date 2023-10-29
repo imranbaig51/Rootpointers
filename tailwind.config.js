@@ -48,6 +48,7 @@ module.exports = {
       'gradient--3': 'linear-gradient(180deg, #E7EFFF 0%, #FAF2FF 100%)',
       'gradient--4': 'linear-gradient(180deg, #4A83E7 0%, #F2DFFF 100%)',
       'gradient--5': 'linear-gradient(89deg, rgba(81, 98, 255, 0.22) -46.9%, rgba(128, 232, 255, 0.22) 125.81%)',
+      'gradient--6': 'linear-gradient(180deg, #E8F0FE 0%, #F8EDFF 100%)',
       'bg--none' : 'none',
     },
   },
