@@ -262,8 +262,8 @@
                         </div>
                     </div>
                 </div>
-                <span class="absolute left-0 bottom-[-4rem] z-[-1]"><img src="Static/Images/circle-bottom.svg"
-                        width="200" height="220"></span>
+                <!-- <span class="absolute left-0 bottom-[-4rem] z-[-1]"><img src="Static/Images/circle-bottom.svg"
+                        width="200" height="220"></span> -->
 
             </div>
             <span class="absolute left-0 top-[-60px] lg:top-[-250px] z-[-1]"><img
@@ -272,6 +272,88 @@
                     src="Static/Images/right-arrow-single.svg" width="200" height="220"></span>
             <span class="absolute right-0 top-[50%] -translate-y-1/2 rotate-180 z-[-1]"><img
                     src="Static/Images/double-left-arrow.svg" width="200" height="220"></span>
+        </section>
+        <section class="bg-[#EBF2FF] lg:bg-white py-8 my-[4rem] lg:my-0 lg:pb-[7rem] 2xl:pb-[10rem]">
+            <div
+                class="container lg:bg-[#EBF2FF] lg:rounded-[14px] lg:py-[4rem] lg:px-[8rem] relative lg:flex lg:justify-between 2xl:!max-w-[1340px]">
+                <form class="lg:w-full lg:flex lg:justify-between lg:flex-wrap">
+                    <div class="relative w-full mb-5 lg:mb-9 lg:w-[47.5%]">
+                        <label for="first-name"
+                            class="block mb-2 pl-1 text-[#292929] font-medium lg:text-[18px] lg:mb-2.5">First
+                            Name</label>
+                        <input id="first-name" type="text" placeholder="Enter Your Name" class="w-full px-4 py-2 lg:py-3 border-[1px] border-solid border-lightblue rounded-[4px] focus:ring-0
+                          focus:border-blue-500 outline-none  hover:border-blue-500 block" placeholder="Search" />
+                    </div>
+                    <div class="relative w-full mb-5 lg:mb-9 lg:w-[47.5%]">
+                        <label for="last-name"
+                            class="block mb-2 pl-1 text-[#292929] font-medium lg:text-[18px] lg:mb-2.5">Last
+                            Name</label>
+                        <input id="last-name" type="text" placeholder="Enter Your Last Name" class="w-full px-4 py-2 lg:py-3 border-[1px] border-solid border-lightblue rounded-[4px] focus:ring-0 focus:border-blue-500 outline-none
+                                 hover:border-blue-500 block" placeholder="Search" />
+                    </div>
+                    <div class="relative w-full mb-5 lg:mb-9 lg:w-[47.5%]">
+                        <label for="phone"
+                            class="block mb-2 pl-1 text-[#292929] font-medium lg:text-[18px] lg:mb-2.5">Phone
+                            Number</label>
+                        <input id="phone" type="tel" placeholder="Enter Your Phone Number" class="w-full px-4 py-2 lg:py-3 border-[1px] border-solid border-lightblue rounded-[4px] focus:ring-0 focus:border-blue-500 outline-none
+                                 hover:border-blue-500 block" placeholder="Search" />
+                    </div>
+                    <div class="relative w-full mb-5 lg:mb-9 lg:w-[47.5%]">
+                        <label for="email"
+                            class="block mb-2 pl-1 text-[#292929] font-medium lg:text-[18px] lg:mb-2.5">Email
+                            Address</label>
+                        <input id="email" type="email" placeholder="Enter Your Email" class="w-full px-4 py-2 lg:py-3 border-[1px] border-solid border-lightblue rounded-[4px] focus:ring-0 focus:border-blue-500 outline-none
+                                 hover:border-blue-500 block " placeholder="Search" />
+                    </div>
+                    <div class="relative w-full mb-5 lg:mb-9 lg:w-[47.5%]">
+                        <label for="country"
+                            class="block mb-2 pl-1 text-[#292929] font-medium lg:text-[18px] lg:mb-2.5">Country</label>
+                        <select id="country" class="formSelect w-full px-4 py-2 lg:py-3 border-[1px]
+                        border-solid border-lightblue rounded-[4px] focus:ring-0 focus:border-blue-500 outline-none
+                                hover:border-blue-500 block">
+                            <option selected>Choose a country</option>
+                            <option value="US">United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="FR">France</option>
+                            <option value="DE">Germany</option>
+                        </select>
+
+
+
+
+                    </div>
+                    <div class="relative w-full mb-5 lg:mb-9 lg:w-[47.5%]">
+                        <label for="postcode"
+                            class="block mb-2 pl-1 text-[#292929] font-medium lg:text-[18px] lg:mb-2.5">Postcode</label>
+                        <input id="postcode" type="text" placeholder="Enter Your Postcode" class="postCode w-full px-4 py-2 lg:py-3 border-[1px] border-solid border-lightblue rounded-[4px] focus:ring-0 focus:border-blue-500 outline-none
+                                 hover:border-blue-500 block " placeholder="Search" />
+                    </div>
+                    <div class="relative w-full mb-3">
+                        <label for="notes"
+                            class="block mb-2 pl-1 text-[#292929] font-medium lg:text-[18px] lg:mb-2.5">Notes
+                            (Optional)</label>
+                        <textarea id="notes" placeholder="Enter Your Message" class="w-full px-4 py-2 lg:py-3 border-[1px] border-solid border-lightblue rounded-[4px] focus:ring-0 focus:border-blue-500 outline-none
+                                 hover:border-blue-500 block resize-none" rows="7"></textarea>
+                        <span class="block text-right mt-2">250</span>
+                    </div>
+                    <div class="w-full py-2">
+                        We’ll handle your personal information in line with our <a class="text-[#0b56db]"
+                            href="#">Privacy Policy</a>
+                    </div>
+                    <div class="flex items-center justify-end w-full">
+                        <span
+                            class="px-4 py-2 lg:px-6 lg:py-4 bg-[#5CA7FF] text-white rounded-[30px] inline-block cursor-pointer
+                             hover:bg-blue-600 focus:outline-none focus:bg-blue-600 min-w-[120px] text-center uppercase">
+                            Talk to us
+                        </span>
+                    </div>
+                </form>
+
+
+
+                <span class="absolute left-0 bottom-[-10rem]"><img src="Static/Images/circle-bottom.svg" width="200"
+                        height="220"></span>
+            </div>
         </section>
 
 
